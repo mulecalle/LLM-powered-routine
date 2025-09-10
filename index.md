@@ -9,4 +9,3 @@ hero:
       text: September
       link: /month/sep/d1
 ---
-
