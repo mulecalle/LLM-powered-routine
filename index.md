@@ -5,7 +5,7 @@ hero:
   name: "Gym routines"
   tagline: Pick a Month
   image:
-    src: /assets/muscle.png
+    src: /muscle.png
     alt: Muscle icon
   actions:
     - theme: brand
