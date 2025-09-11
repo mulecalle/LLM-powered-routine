@@ -5,6 +5,7 @@ export default defineConfig({
   title: "llm-powered-routines",
   description: "random site for gym routines",
   base: '/LLM-powered-routine/',
+  lastUpdated: true,
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
@@ -23,5 +24,14 @@ export default defineConfig({
 
     // Remove the "On this page" table of contents
     outline: false,
+
+    // Customize the Last Updated label and date format
+    lastUpdated: {
+      text: 'Last updated',
+      formatOptions: {
+        dateStyle: 'medium',
+        timeStyle: 'short'
+      }
+    }
   }
 })
