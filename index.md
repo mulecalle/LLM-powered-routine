@@ -8,11 +8,10 @@ hero:
     src: /muscle.png
     alt: Muscle icon
   actions:
+    - theme: alt
+      text: October
+      link: /month/oct/d1
     - theme: brand
       text: September
       link: /month/sep/d1
-    - theme: alt
-      text: August
-      link: /month/aug/d1
-  
 ---
