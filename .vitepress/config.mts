@@ -27,6 +27,14 @@ export default defineConfig({
           { text: 'Day 2 - PIERNAS Y HOMBROS', link: '/month/sep/d2' },
           { text: 'Day 3 - ESPALDA Y TRICEPS', link: '/month/sep/d3' },
         ]
+      },
+      {
+        text: 'November',
+        items: [
+          { text: 'Day 1 - PECHO Y BICEPS', link: '/month/nov/d1' },
+          { text: 'Day 2 - PIERNAS Y HOMBROS', link: '/month/nov/d2' },
+          { text: 'Day 3 - ESPALDA Y TRICEPS', link: '/month/nov/d3' },
+        ]
       }
     ],
 
