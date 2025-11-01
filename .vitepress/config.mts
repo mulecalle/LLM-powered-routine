@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   // Set favicon
   head: [
-    ['link', { rel: 'icon', href: '/muscle.png', type: 'image/png' }]
+    ['link', { rel: 'icon', href: 'muscle.png', type: 'image/png' }]
   ],
   title: "llm-powered-routines",
   description: "random site for gym routines",
