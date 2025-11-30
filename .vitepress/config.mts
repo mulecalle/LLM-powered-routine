@@ -16,30 +16,38 @@ export default defineConfig({
     ],
 
     sidebar: [
-    {
-        text: 'November',
-        items: [
-            { text: 'Day 1 - PECHO Y BICEPS', link: '/month/nov/d1' },
-            { text: 'Day 2 - PIERNAS Y HOMBROS', link: '/month/nov/d2' },
-            { text: 'Day 3 - ESPALDA Y TRICEPS', link: '/month/nov/d3' },
-        ]
-    },
-      {
+        {
+            text: 'December',
+            items: [
+                { text: 'Day 1 - PECHO Y BICEPS', link: '/month/dec/d1' },
+                { text: 'Day 2 - PIERNAS Y HOMBROS', link: '/month/dec/d2' },
+                { text: 'Day 3 - ESPALDA Y TRICEPS', link: '/month/dec/d3' },
+            ]
+        },
+        {
+            text: 'November',
+            items: [
+                { text: 'Day 1 - PECHO Y BICEPS', link: '/month/nov/d1' },
+                { text: 'Day 2 - PIERNAS Y HOMBROS', link: '/month/nov/d2' },
+                { text: 'Day 3 - ESPALDA Y TRICEPS', link: '/month/nov/d3' },
+            ]
+        },
+        {
         text: 'October',
         items: [
             { text: 'Day 1 - PECHO Y BICEPS', link: '/month/oct/d1' },
             { text: 'Day 2 - PIERNAS Y HOMBROS', link: '/month/oct/d2' },
             { text: 'Day 3 - ESPALDA Y TRICEPS', link: '/month/oct/d3' },
         ]
-      },
-      {
+        },
+        {
         text: 'September',
         items: [
           { text: 'Day 1 - PECHO Y BICEPS', link: '/month/sep/d1' },
           { text: 'Day 2 - PIERNAS Y HOMBROS', link: '/month/sep/d2' },
           { text: 'Day 3 - ESPALDA Y TRICEPS', link: '/month/sep/d3' },
         ]
-      }
+        }
     ],
 
     // Remove the "On this page" table of contents
