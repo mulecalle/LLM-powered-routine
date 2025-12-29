@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
+ // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  // Set favicon
+// Set favicon
   head: [
     ['link', { rel: 'icon', href: 'muscle.png', type: 'image/png' }]
   ],
@@ -19,33 +19,33 @@ export default defineConfig({
         {
             text: 'December \'25',
             items: [
-                { text: 'Day 1 - PECHO Y BICEPS', link: '/month/dec/d1' },
-                { text: 'Day 2 - PIERNAS Y HOMBROS', link: '/month/dec/d2' },
-                { text: 'Day 3 - ESPALDA Y TRICEPS', link: '/month/dec/d3' },
+                { text: 'Day 1 - PECHO Y BICEPS', link: '/month/25/dec/d1' },
+                { text: 'Day 2 - PIERNAS Y HOMBROS', link: '/month/25/dec/d2' },
+                { text: 'Day 3 - ESPALDA Y TRICEPS', link: '/month/25/dec/d3' },
             ]
         },
         {
             text: 'November \'25',
             items: [
-                { text: 'Day 1 - PECHO Y BICEPS', link: '/month/nov/d1' },
-                { text: 'Day 2 - PIERNAS Y HOMBROS', link: '/month/nov/d2' },
-                { text: 'Day 3 - ESPALDA Y TRICEPS', link: '/month/nov/d3' },
+                { text: 'Day 1 - PECHO Y BICEPS', link: '/month/25/nov/d1' },
+                { text: 'Day 2 - PIERNAS Y HOMBROS', link: '/month/25/nov/d2' },
+                { text: 'Day 3 - ESPALDA Y TRICEPS', link: '/month/25/nov/d3' },
             ]
         },
         {
         text: 'October \'25',
         items: [
-            { text: 'Day 1 - PECHO Y BICEPS', link: '/month/oct/d1' },
-            { text: 'Day 2 - PIERNAS Y HOMBROS', link: '/month/oct/d2' },
-            { text: 'Day 3 - ESPALDA Y TRICEPS', link: '/month/oct/d3' },
+            { text: 'Day 1 - PECHO Y BICEPS', link: '/month/25/oct/d1' },
+            { text: 'Day 2 - PIERNAS Y HOMBROS', link: '/month/25/oct/d2' },
+            { text: 'Day 3 - ESPALDA Y TRICEPS', link: '/month/25/oct/d3' },
         ]
         },
         {
         text: 'September \'25',
         items: [
-          { text: 'Day 1 - PECHO Y BICEPS', link: '/month/sep/d1' },
-          { text: 'Day 2 - PIERNAS Y HOMBROS', link: '/month/sep/d2' },
-          { text: 'Day 3 - ESPALDA Y TRICEPS', link: '/month/sep/d3' },
+          { text: 'Day 1 - PECHO Y BICEPS', link: '/month/25/sep/d1' },
+          { text: 'Day 2 - PIERNAS Y HOMBROS', link: '/month/25/sep/d2' },
+          { text: 'Day 3 - ESPALDA Y TRICEPS', link: '/month/25/sep/d3' },
         ]
         }
     ],
