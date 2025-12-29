@@ -9,15 +9,15 @@ hero:
     alt: Muscle icon
   actions:
     - theme: brand
-      text: December
+      text: December '25
       link: /month/dec/d1
     - theme: alt
-      text: November
+      text: November '25
       link: /month/nov/d1
     - theme: alt
-      text: October
+      text: October '25
       link: /month/oct/d1
     - theme: alt
-      text: September
+      text: September '25
       link: /month/sep/d1
 ---

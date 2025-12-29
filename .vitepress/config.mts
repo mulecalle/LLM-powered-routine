@@ -17,7 +17,7 @@ export default defineConfig({
 
     sidebar: [
         {
-            text: 'December',
+            text: 'December \'25',
             items: [
                 { text: 'Day 1 - PECHO Y BICEPS', link: '/month/dec/d1' },
                 { text: 'Day 2 - PIERNAS Y HOMBROS', link: '/month/dec/d2' },
@@ -25,7 +25,7 @@ export default defineConfig({
             ]
         },
         {
-            text: 'November',
+            text: 'November \'25',
             items: [
                 { text: 'Day 1 - PECHO Y BICEPS', link: '/month/nov/d1' },
                 { text: 'Day 2 - PIERNAS Y HOMBROS', link: '/month/nov/d2' },
@@ -33,7 +33,7 @@ export default defineConfig({
             ]
         },
         {
-        text: 'October',
+        text: 'October \'25',
         items: [
             { text: 'Day 1 - PECHO Y BICEPS', link: '/month/oct/d1' },
             { text: 'Day 2 - PIERNAS Y HOMBROS', link: '/month/oct/d2' },
@@ -41,7 +41,7 @@ export default defineConfig({
         ]
         },
         {
-        text: 'September',
+        text: 'September \'25',
         items: [
           { text: 'Day 1 - PECHO Y BICEPS', link: '/month/sep/d1' },
           { text: 'Day 2 - PIERNAS Y HOMBROS', link: '/month/sep/d2' },
