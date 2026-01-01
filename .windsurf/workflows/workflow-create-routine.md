@@ -16,9 +16,9 @@ The flow MUST NOT start until the user has confirmed the calculated month is cor
 
 Condition for Successful Completion:
 The flow MUST NOT end unless ALL of the following files have been successfully created:
-* month/$MONTH_KEY/d1.md
-* month/$MONTH_KEY/d2.md
-* month/$MONTH_KEY/d3.md
+* month/26/$MONTH_KEY/d1.md
+* month/26/$MONTH_KEY/d2.md
+* month/26/$MONTH_KEY/d3.md
 * .vitepress/config.mts
 * index.md
 

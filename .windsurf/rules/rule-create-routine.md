@@ -6,7 +6,7 @@ globs:
 
 To establish a new set of monthly gym routines with correct file structure, navigation updates, and homepage integration.
 
-1. 📂 File and Folder Structure Creation. These steps define the required file and folder layout and the necessary configuration updates.
+1. File and Folder Structure Creation. These steps define the required file and folder layout and the necessary configuration updates.
 
 1.1 - Define Month Variable:
 * Determine the target month.
@@ -25,9 +25,9 @@ To establish a new set of monthly gym routines with correct file structure, navi
 {
     text: '$MONTH_TITLE', // Use full month name
     items: [
-        { text: 'Day 1 - PECHO Y BICEPS', link: '/month/$MONTH_KEY/d1' },
-        { text: 'Day 2 - PIERNAS Y HOMBROS', link: '/month/$MONTH_KEY/d2' },
-        { text: 'Day 3 - ESPALDA Y TRICEPS', link: '/month/$MONTH_KEY/d3' },
+        { text: 'Day 1 - PECHO Y BICEPS', link: '/month/26/$MONTH_KEY/d1' },
+        { text: 'Day 2 - PIERNAS Y HOMBROS', link: '/month/26/$MONTH_KEY/d2' },
+        { text: 'Day 3 - ESPALDA Y TRICEPS', link: '/month/26/$MONTH_KEY/d3' },
     ]
 }
 ```
