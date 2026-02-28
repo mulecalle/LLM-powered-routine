@@ -1,0 +1,46 @@
+# .gemini/commands/routine/create.toml
+description = "Create a new set of monthly gym routines with correct file structure, navigation updates, and homepage integration."
+prompt = """
+Current date: !{date}
+Using the current date as a baseline, your goal is to establish a new set of monthly gym routines for the incoming month.
+
+Follow these rules strictly:
+
+### 1. Calculation & Confirmation
+- Calculate the target month and year (e.g., if today is February, the target is March).
+- Set `$MONTH_KEY` (first three lowercase letters, e.g., 'mar'), `$MONTH_TITLE` (full capitalized name, e.g., 'March'), and `$YEAR_SHORT` (last two digits, e.g., '26').
+- **MANDATORY**: Before making any file changes, present the calculated month and year to the user and wait for their confirmation.
+
+### 2. Folder Structure
+- Create a new directory: `month/$YEAR_SHORT/$MONTH_KEY`.
+- Copy or generate `d1.md`, `d2.md`, and `d3.md` in that folder.
+- **Principle 1 (Exercise Replacement)**: For every muscle group, replace at least 50% of exercises from the previous month's routine with suitable variations. Prioritize movement patterns used in any past monthly routine in the `month/` directory as your primary exercise library.
+- **Principle 2 (Exercise Count)**: Maintain the same total number of exercises per muscle group as the baseline files.
+- **Principle 3 (Set Count Variation)**: Total working sets must be 3 or 4. Vary the pattern of sets and repetitions (e.g., from 4-set pyramid to 3-set straight set) to provide a new stimulus.
+
+### 3. Update Navigation (`.vitepress/config.mts`)
+- Add the new month object as the FIRST element of the `sidebar` array:
+  ```javascript
+  {
+      text: '20$YEAR_SHORT - $MONTH_TITLE',
+      items: [
+          { text: 'Day 1 - PECHO Y BICEPS', link: '/month/$YEAR_SHORT/$MONTH_KEY/d1' },
+          { text: 'Day 2 - PIERNAS Y HOMBROS', link: '/month/$YEAR_SHORT/$MONTH_KEY/d2' },
+          { text: 'Day 3 - ESPALDA Y TRICEPS', link: '/month/$YEAR_SHORT/$MONTH_KEY/d3' },
+      ]
+  }
+  ```
+
+### 4. Update Homepage Actions (`index.md`)
+- Add the new month object as the FIRST element of the `actions` array:
+  ```yaml
+  - theme: brand
+    text: $MONTH_TITLE
+    link: /month/$YEAR_SHORT/$MONTH_KEY/d1
+  ```
+- Change the `theme` of the previous first month's action from `brand` to `alt`.
+
+### 5. Final Validation
+- Ensure ALL files (`d1.md`, `d2.md`, `d3.md`, `config.mts`, `index.md`) are updated successfully.
+- Ensure the folder structure follows `month/$YEAR_SHORT/$MONTH_KEY/`.
+"""
