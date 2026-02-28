@@ -9,7 +9,7 @@ hero:
     alt: Muscle icon
   actions:
     - theme: brand
-      text: March
+      text: Mar
       link: /month/26/mar/d1
     - theme: alt
       text: Feb
