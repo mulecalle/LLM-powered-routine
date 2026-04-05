@@ -17,6 +17,14 @@ export default defineConfig({
 
     sidebar: [
         {
+            text: '2026 - April',
+            items: [
+                { text: 'Day 1 - PECHO Y BICEPS', link: '/month/26/apr/d1' },
+                { text: 'Day 2 - PIERNAS Y HOMBROS', link: '/month/26/apr/d2' },
+                { text: 'Day 3 - ESPALDA Y TRICEPS', link: '/month/26/apr/d3' },
+            ]
+        },
+        {
             text: '2026 - March',
             items: [
                 { text: 'Day 1 - PECHO Y BICEPS', link: '/month/26/mar/d1' },
