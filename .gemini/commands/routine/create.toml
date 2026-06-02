@@ -7,15 +7,17 @@ Using the current date as a baseline, your goal is to establish a new set of mon
 Follow these rules strictly:
 
 ### 1. Calculation & Confirmation
-- Calculate the target month and year (e.g., if today is February, the target is March).
-- Set `$MONTH_KEY` (first three lowercase letters, e.g., 'mar'), `$MONTH_TITLE` (full capitalized name, e.g., 'March'), and `$YEAR_SHORT` (last two digits, e.g., '26').
+- Calculate the target month and year based on the latest existing routine under `month/` (e.g., if the latest is February, the target is March).
+- Set `$MONTH_KEY` (first three lowercase letters, e.g., 'mar'), `$MONTH_TITLE` (full capitalized name, e.g., 'March'), `$MONTH_SHORT` (capitalized 3-letter label, e.g., 'Mar'), and `$YEAR_SHORT` (last two digits, e.g., '26').
+- Year rollover: when the target month is January, increment `$YEAR_SHORT` relative to December.
 - **MANDATORY**: Before making any file changes, present the calculated month and year to the user and wait for their confirmation.
 
 ### 2. Folder Structure
 - Create a new directory: `month/$YEAR_SHORT/$MONTH_KEY`.
 - Copy or generate `d1.md`, `d2.md`, and `d3.md` in that folder.
 - **Principle 1 (Exercise Replacement)**: For every muscle group, replace at least 50% of exercises from the previous month's routine with suitable variations. Prioritize movement patterns used in any past monthly routine in the `month/` directory as your primary exercise library.
-- **Principle 2 (Exercise Count)**: Maintain the same total number of exercises per muscle group as the baseline files.
+- **Principle 1 rounding**: For groups with an odd or small number of exercises, round up (at least 1 of 1, at least 2 of 3).
+- **Principle 2 (Exercise Count)**: Match the previous month's exercise count per muscle group and per day exactly. Preserve content conventions: `# $MONTH_TITLE - <DAY TITLE>` headings, the Series/Repeticiones tables, the weighted-core row where present (e.g. `14 (50kg)`), and the closing `Estirar` / `GL HF` footer.
 - **Principle 3 (Set Count Variation)**: Total working sets must be 3 or 4. Vary the pattern of sets and repetitions (e.g., from 4-set pyramid to 3-set straight set) to provide a new stimulus.
 
 ### 3. Update Navigation (`.vitepress/config.mts`)
@@ -35,10 +37,11 @@ Follow these rules strictly:
 - Add the new month object as the FIRST element of the `actions` array:
   ```yaml
   - theme: brand
-    text: $MONTH_TITLE
+    text: $MONTH_SHORT
     link: /month/$YEAR_SHORT/$MONTH_KEY/d1
   ```
-- Change the `theme` of the previous first month's action from `brand` to `alt`.
+- Label convention: use `$MONTH_SHORT` alone for the newest year; append a `'YY` suffix for months of an older year (e.g. `Dec '25`).
+- Change the `theme` of the previous first month's action from `brand` to `alt`. Only the newest month may use `theme: brand`.
 
 ### 5. Final Validation
 - Ensure ALL files (`d1.md`, `d2.md`, `d3.md`, `config.mts`, `index.md`) are updated successfully.

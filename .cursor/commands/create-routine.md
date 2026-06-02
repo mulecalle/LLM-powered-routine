@@ -1,8 +1,6 @@
----
-description: Prompt to trigger the rule-create-routine rule
----
+# Create a new monthly routine
 
-# Goal: Create a new routine using the `@rule-create-routine.md` template for the incoming month.
+Create a new routine using the `.cursor/rules/create-routine.mdc` template for the incoming month.
 
 ## Mandatory Pre-Flow Setup and Validation
 

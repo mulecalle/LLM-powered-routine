@@ -1,7 +1,7 @@
 ---
-trigger: manual
-description: Establish a new month's gym routine (files, sidebar nav, and homepage actions) with progressive exercise variation.
+description: Establish a new month's gym routine (files, sidebar nav, and homepage actions) with progressive exercise variation. Apply when asked to create/add a new monthly routine.
 globs:
+alwaysApply: false
 ---
 
 To establish a new set of monthly gym routines with correct file structure, navigation updates, and homepage integration.
