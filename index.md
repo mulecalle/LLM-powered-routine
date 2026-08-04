@@ -9,6 +9,9 @@ hero:
     alt: Muscle icon
   actions:
     - theme: brand
+      text: Aug
+      link: /month/26/aug/d1
+    - theme: alt
       text: Jul
       link: /month/26/jul/d1
     - theme: alt
